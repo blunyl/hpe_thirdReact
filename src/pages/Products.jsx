@@ -28,12 +28,12 @@ const Products = () => {
 
   //상품 한개 가져오기
   const getProductList = async () => {
-    let url = `http://localhost:5000/products/${id}`;
+    let url = `https://my-json-server.typicode.com/blunyl/hpe_thirdReact/products/${id}`;
     let response = await fetch(url);
     let data = await response.json();
     setProducts(data);
 
-    let url2 = `http://localhost:5000/products/?category=${data.category}`;
+    let url2 = `https://my-json-server.typicode.com/blunyl/hpe_thirdReact/products/?category=${data.category}`;
     let response2 = await fetch(url2);
     let data2 = await response2.json();
     setSimilarList(data2);
