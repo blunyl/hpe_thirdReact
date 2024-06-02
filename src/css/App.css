@@ -1,0 +1,129 @@
+.App {
+  overflow: hidden;
+}
+
+.mw {
+  max-width: 1200px;
+  width: calc(100% - 2rem);
+  margin: auto;
+}
+
+@media (max-width: 800px) {
+  .mw {
+    padding-top: 100px; /*헤더랑 겹침방지*/
+  }
+}
+
+.App > * {
+  max-width: 1200px;
+  width: calc(100% - 2rem);
+  margin: auto;
+}
+
+.foot {
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid lightgray;
+}
+
+/*
+.secBanner .swiper-slide.swiper-slide-active {
+  border: 10px solid lightcoral !important;
+}
+*/
+
+h2 {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+/* main new category */
+.mainList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.mainList > * {
+  /* border: 1px solid red; */
+}
+
+.mainList .listCon {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.mainList .listCon li {
+  /* border: 1px solid powderblue; */
+}
+
+.shopall {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.shopall .listCon {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.shopall h2 {
+  width: 100%;
+}
+
+.shopall nav {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.shopall nav button {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: goldenrod;
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.shopall nav button:hover {
+  opacity: 0.7;
+}
+
+.cart th,
+.cart .center {
+  text-align: center;
+}
+
+.cart th,
+.cart td {
+  padding: 1rem;
+  border: 1px solid lightgray;
+  vertical-align: middle;
+}
+
+.cart .right {
+  text-align: right;
+}
+
+.cart img {
+  width: 100px;
+}
+
+.cart .imgArea {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+.cart tbody td:last-of-type:hover i {
+  color: goldenrod;
+  cursor: pointer;
+}

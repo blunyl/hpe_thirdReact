@@ -1,0 +1,49 @@
+.productCon {
+  display: flex;
+  gap: 2rem;
+}
+
+.pInfo button {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: goldenrod;
+  color: white;
+}
+
+.pInfo .cartBtn {
+  padding: 1rem 2rem;
+}
+
+.pInfo .cartBtn:hover {
+  opacity: 0.7;
+}
+
+.imgCon {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.imgCon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pInfo {
+  flex: 1;
+}
+.pInfo > p,
+.pInfo span {
+  font-size: 1.5rem;
+}
+.count {
+  padding: 1rem 0;
+  display: flex;
+  gap: 0.5rem;
+}
+.pDesc {
+  padding: 2rem 0;
+}
+.similar {
+  padding: 2rem 0;
+}
